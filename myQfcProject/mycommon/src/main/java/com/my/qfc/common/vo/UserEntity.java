@@ -1,6 +1,16 @@
 package com.my.qfc.common.vo;
 
-public class UserVO implements Cloneable {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class UserEntity {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	private double userid;
 	private String username;
@@ -8,18 +18,25 @@ public class UserVO implements Cloneable {
 
 	// Constructors, getters, and setters
 
-	// Default constructor
-	public UserVO() {
+	public UserEntity() {
+		// Default constructor
 	}
 
-	// Parameterized constructor
-	public UserVO(double userid, String username, String useraddress) {
+	public UserEntity(double userid, String username, String useraddress) {
 		this.userid = userid;
 		this.username = username;
 		this.useraddress = useraddress;
 	}
 
 	// Generate getters and setters
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public double getUserid() {
 		return userid;
@@ -45,20 +62,9 @@ public class UserVO implements Cloneable {
 		this.useraddress = useraddress;
 	}
 
-	// Clone method to create a deep copy
-	@Override
-	public UserVO clone() {
-		try {
-			return (UserVO) super.clone();
-		} catch (CloneNotSupportedException e) {
-			// Handle the exception as needed
-			return null;
-		}
-	}
-
 	@Override
 	public String toString() {
-		return "UserVO{" + "userid=" + userid + ", username='" + username + '\'' + ", useraddress='" + useraddress
-				+ '\'' + '}';
+		return "UserVO{" + "id=" + id + ", userid=" + userid + ", username='" + username + '\'' + ", useraddress='"
+				+ useraddress + '\'' + '}';
 	}
 }

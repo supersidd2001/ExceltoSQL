@@ -1,0 +1,1 @@
+2023-12-15 01:24:16,773 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx

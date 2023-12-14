@@ -22,7 +22,7 @@ public class App {
 			System.out.println("Total Records Count: " + totalRecordsCount);
 
 		} catch (Exception e) {
-			ErrorLogger.logError(e.getMessage(), "App");
+
 		}
 	}
 }

@@ -13,7 +13,6 @@ public class DatabaseUtil {
 			session.save(userEntity);
 			transaction.commit();
 		} catch (Exception e) {
-			ErrorLogger.logError(e.getMessage(), "DatabaseUtil");
 		}
 	}
 
@@ -23,7 +22,6 @@ public class DatabaseUtil {
 			session.update(userEntity);
 			transaction.commit();
 		} catch (Exception e) {
-			ErrorLogger.logError(e.getMessage(), "DatabaseUtil");
 		}
 	}
 }
