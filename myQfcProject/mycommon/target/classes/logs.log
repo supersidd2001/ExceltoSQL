@@ -24,3 +24,79 @@
 				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-12-15 01:24:16.773 [main] ERROR
 				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 01:32:12.331 [main] INFO 
+				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-12-15 01:32:12.824 [main] WARN 
+				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2023-12-15 01:32:13.458 [main] INFO 
+				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 01:32:13.810 [main] WARN 
+				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2023-12-15 01:32:13.814 [main] WARN 
+				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-12-15 01:32:13.830 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
+2023-12-15 01:32:13.831 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2023-12-15 01:32:13.831 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2023-12-15 01:32:13.840 [main] INFO 
+				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-12-15 01:32:14.548 [main] INFO 
+				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 01:32:14.926 [main] INFO 
+				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-12-15 01:32:15.013 [main] INFO 
+				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 01:32:15.242 [main] ERROR
+				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 01:32:41.330 [main] INFO 
+				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-12-15 01:32:41.795 [main] WARN 
+				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2023-12-15 01:32:42.396 [main] INFO 
+				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 01:32:42.735 [main] WARN 
+				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2023-12-15 01:32:42.739 [main] WARN 
+				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-12-15 01:32:42.751 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
+2023-12-15 01:32:42.751 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2023-12-15 01:32:42.751 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2023-12-15 01:32:42.760 [main] INFO 
+				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-12-15 01:32:43.480 [main] INFO 
+				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 01:32:43.974 [main] INFO 
+				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-12-15 01:32:44.061 [main] INFO 
+				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 01:32:44.308 [main] ERROR
+				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 01:33:32.784 [main] INFO 
+				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-12-15 01:33:33.283 [main] WARN 
+				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2023-12-15 01:33:33.892 [main] INFO 
+				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 01:33:34.214 [main] WARN 
+				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2023-12-15 01:33:34.218 [main] WARN 
+				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-12-15 01:33:34.234 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
+2023-12-15 01:33:34.234 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2023-12-15 01:33:34.234 [main] INFO 
+				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2023-12-15 01:33:34.243 [main] INFO 
+				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-12-15 01:33:35.019 [main] INFO 
+				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 01:33:35.397 [main] INFO 
+				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-12-15 01:33:35.484 [main] INFO 
+				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
