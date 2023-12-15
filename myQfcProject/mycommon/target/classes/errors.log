@@ -1,3 +1,23 @@
 2023-12-15 01:24:16,773 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
 2023-12-15 01:32:15,242 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
 2023-12-15 01:32:44,308 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:20:31,045 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: UserName, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:22:50,963 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:22:51,159 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:77] Error creating or writing to the error log file.
+java.io.FileNotFoundException: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx_error.xlsx (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at com.my.qfc.common.util.ErrorLogger.saveErrorLogFile(ErrorLogger.java:71)
+	at com.my.qfc.common.util.ErrorLogger.logError(ErrorLogger.java:32)
+	at com.my.qfc.common.util.ExcelReaderStandalone.getStringCellValue(ExcelReaderStandalone.java:87)
+	at com.my.qfc.common.util.ExcelReaderStandalone.createUserVOFromRow(ExcelReaderStandalone.java:53)
+	at com.my.qfc.common.util.ExcelReaderStandalone.processExcelFile(ExcelReaderStandalone.java:42)
+	at com.my.qfc.common.App.main(App.java:15)
+2023-12-15 23:23:17,790 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:25:28,730 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:29:29,877 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-15 23:38:47,234 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-16 01:50:27,372 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
+2023-12-16 01:55:09,052 ERROR [main] c.m.q.c.u.ErrorLogger [ErrorLogger.java:27] Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 7, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx

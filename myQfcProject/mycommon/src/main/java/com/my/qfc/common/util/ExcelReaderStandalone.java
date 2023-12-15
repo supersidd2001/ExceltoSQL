@@ -12,10 +12,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+import org.springframework.stereotype.Component;
 
-import com.my.qfc.common.vo.UserVO;
-import com.my.qfc.common.vo.UserVO;
+import com.my.qfc.common.vo.UserEntity;
 
+@Component
 public class ExcelReaderStandalone {
 
 	private final DatabaseUtil databaseUtil;
@@ -39,7 +40,7 @@ public class ExcelReaderStandalone {
 			for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
 				XSSFRow row = sheet.getRow(rowIndex);
 				if (row != null) {
-					UserVO UserVO = createUserVOFromRow(row, file.toString());
+					UserEntity UserVO = createUserVOFromRow(row, file.toString());
 					processUserVO(UserVO);
 				}
 			}
@@ -48,55 +49,56 @@ public class ExcelReaderStandalone {
 		}
 	}
 
-	private UserVO createUserVOFromRow(Row row, String fileName) {
+	private UserEntity createUserVOFromRow(Row row, String fileName) {
 		double userId = getNumericCellValue(row.getCell(0), "UserID", fileName);
 		String username = getStringCellValue(row.getCell(1), "UserName", fileName);
 		String userAddress = getStringCellValue(row.getCell(2), "UserAddress", fileName);
 
-		UserVO UserVO = new UserVO();
+		UserEntity UserVO = new UserEntity();
 		UserVO.setUserid(userId);
 		UserVO.setUsername(username);
 		UserVO.setUseraddress(userAddress);
-
 		return UserVO;
 	}
 
-	@SuppressWarnings({ "deprecation" })
+	@SuppressWarnings({ "null" })
 	private double getNumericCellValue(Cell cell, String columnName, String fileName) {
 		if (cell != null) {
 			if (cell.getCellType() == CellType.NUMERIC) {
 				return cell.getNumericCellValue();
 			} else {
-				ErrorLogger.logError(columnName, "Invalid numeric cell type", cell.getRowIndex(), columnName, fileName);
+				ErrorLogger.logError(cell.toString(), "Invalid numeric cell type", cell.getRowIndex(), columnName,
+						fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(columnName, "Numeric cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(cell.toString(), "Numeric cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return 9999; // Default value
 	}
 
-	@SuppressWarnings({ "deprecation" })
+	@SuppressWarnings({ "null" })
 	private String getStringCellValue(Cell cell, String columnName, String fileName) {
 		if (cell != null) {
 			if (cell.getCellType() == CellType.STRING) {
 				return cell.getStringCellValue();
 			} else {
-				ErrorLogger.logError(columnName, "Invalid string cell type", cell.getRowIndex(), columnName, fileName);
+				ErrorLogger.logError(cell.toString(), "Invalid string cell type", cell.getRowIndex(), columnName,
+						fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(columnName, "String cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(cell.toString(), "String cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return null; // Default value
 	}
 
-	private void processUserVO(UserVO uservo) {
+	private void processUserVO(UserEntity uservo) {
 		try {
 			// Check if the user already exists in the database
-			UserVO existingUser = getUserFromDatabase(uservo.getUserid());
+			UserEntity existingUser = getUserFromDatabase(uservo.getUserid());
 
 			if (existingUser != null) {
 				// Update existing user
@@ -109,18 +111,19 @@ public class ExcelReaderStandalone {
 				}
 			} else {
 				databaseUtil.insertUser(uservo);
+				successfulRecordsCount++;
 			}
 		} catch (Exception e) {
 		}
 	}
 
-	private UserVO getUserFromDatabase(double userId) {
+	private UserEntity getUserFromDatabase(double userId) {
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			String hql = "FROM UserVO WHERE userId = :userId";
-			Query<UserVO> query = session.createQuery(hql, UserVO.class);
+			Query<UserEntity> query = session.createQuery(hql, UserEntity.class);
 			query.setParameter("userId", userId);
 
-			UserVO user = query.uniqueResult();
+			UserEntity user = query.uniqueResult();
 			return user;
 		} catch (Exception e) {
 			return null;

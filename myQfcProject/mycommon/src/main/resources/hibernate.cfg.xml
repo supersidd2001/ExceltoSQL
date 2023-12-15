@@ -27,7 +27,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mention annotated entity class -->
-        <mapping class="com.my.qfc.common.vo.UserVO"/>
+        <mapping class="com.my.qfc.common.vo.UserEntity"/>
 
     </session-factory>
 </hibernate-configuration>

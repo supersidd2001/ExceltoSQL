@@ -57,17 +57,15 @@ public class ErrorLogger {
 
 		// Save error log file
 		try {
-			Path errorLogFilePath = Paths.get(
-					"C:\\Users\\Siddharth Shinde\\Desktop\\Springmaven\\myQfcProject\\myQfcProject\\mycommon\\src\\main\\resources\\"
-							+ errorDetails.getFileName() + "_error.xlsx");
+			// Extract the directory path from the input fileName
+			Path originalFilePath = Paths.get(errorDetails.getFileName());
+			Path directoryPath = originalFilePath.getParent();
+
+			// Create the error log file
+			Path errorLogFilePath = directoryPath.resolve(originalFilePath.getFileName().toString() + "_error.xlsx");
 
 			// Create parent directories if they do not exist
 			Files.createDirectories(errorLogFilePath.getParent());
-
-			// Create the error log file if it does not exist
-			if (!Files.exists(errorLogFilePath)) {
-				Files.createFile(errorLogFilePath);
-			}
 
 			// Write to the error log file
 			try (FileOutputStream fileOut = new FileOutputStream(errorLogFilePath.toFile())) {
