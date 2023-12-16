@@ -1,6 +1,9 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 17
+Built-By: Siddharth
+Build-Jdk: 17.0.9
 Implementation-Title: myservice
 Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.project.qbs
+Implementation-URL: http://www.example.com
 Created-By: Maven Integration for Eclipse
 

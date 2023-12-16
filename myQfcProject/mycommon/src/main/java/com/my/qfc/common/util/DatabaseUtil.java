@@ -9,18 +9,34 @@ public class DatabaseUtil {
 
 	public void insertUser(UserEntity userEntity) {
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-			Transaction transaction = session.beginTransaction();
-			session.save(userEntity);
-			transaction.commit();
+			Transaction transaction = null;
+			try {
+				transaction = session.beginTransaction();
+				session.save(userEntity);
+				transaction.commit();
+			} catch (Exception e) {
+				if (transaction != null) {
+					transaction.rollback();
+				}
+				throw e; // Re-throw the exception after rollback
+			}
 		} catch (Exception e) {
 		}
 	}
 
 	public void updateUser(UserEntity userEntity) {
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-			Transaction transaction = session.beginTransaction();
-			session.update(userEntity);
-			transaction.commit();
+			Transaction transaction = null;
+			try {
+				transaction = session.beginTransaction();
+				session.update(userEntity);
+				transaction.commit();
+			} catch (Exception e) {
+				if (transaction != null) {
+					transaction.rollback();
+				}
+				throw e; // Re-throw the exception after rollback
+			}
 		} catch (Exception e) {
 		}
 	}

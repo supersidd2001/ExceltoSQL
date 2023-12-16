@@ -1,7 +1,6 @@
 package com.my.qfc.common;
 
 import com.my.qfc.common.util.DatabaseUtil;
-import com.my.qfc.common.util.ErrorLogger;
 import com.my.qfc.common.util.ExcelReaderStandalone;
 
 public class App {
@@ -22,7 +21,8 @@ public class App {
 			System.out.println("Total Records Count: " + totalRecordsCount);
 
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
+		
 	}
 }
