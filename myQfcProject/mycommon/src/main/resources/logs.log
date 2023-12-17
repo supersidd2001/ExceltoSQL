@@ -1,583 +1,626 @@
-2023-12-15 01:24:13.149 [main] INFO 
+2023-12-18 00:14:48.819 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 18360 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:14:48.828 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:14:50.313 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Invocation of init method failed
+2023-12-18 00:14:50.340 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:14:50.400 [main] ERROR
+				o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.my.qfc.service.code.MyServiceApplication.main(MyServiceApplication.java:21)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.my.qfc.service.util.ApplicationProperties.getInputFolder()" because "this.applicationProperties" is null
+	at com.my.qfc.service.scheduler.MyScheduler.processFiles(MyScheduler.java:29)
+	at com.my.qfc.service.code.MyServiceApplication.initialize(MyServiceApplication.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 17 common frames omitted
+2023-12-18 00:30:11.507 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 7920 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:30:11.515 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:30:12.974 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:30:13.003 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:30:13.310 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.884 seconds (process running for 4.464)
+2023-12-18 00:32:24.986 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 17016 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:32:24.995 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:32:26.352 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:32:26.384 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:32:26.703 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.882 seconds (process running for 4.42)
+2023-12-18 00:33:16.088 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 8876 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:33:16.095 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:33:17.517 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:33:17.551 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:33:17.922 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 3.014 seconds (process running for 4.522)
+2023-12-18 00:33:17.928 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:22.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:32.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:37.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:42.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:47.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:02.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:07.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:12.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:17.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:22.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:27.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:32.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:37.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:42.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:43.967 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 6876 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:34:43.975 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:34:45.448 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+2023-12-18 00:34:45.473 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:34:45.522 [main] ERROR
+				o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.my.qfc.service.code.MyServiceApplication.main(MyServiceApplication.java:21)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 16 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.my.qfc.service.scheduler"
+
+	at com.my.qfc.service.scheduler.MyScheduler.<init>(MyScheduler.java:1)
+	at com.my.qfc.service.code.MyServiceApplication.<init>(MyServiceApplication.java:18)
+	at com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 18 common frames omitted
+2023-12-18 00:34:47.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:52.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:57.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:02.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:07.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:12.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:18.413 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 15636 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:35:18.421 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:35:20.207 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.825 seconds (process running for 4.292)
+2023-12-18 00:35:22.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:32.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:37.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:42.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:47.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:52.894 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:57.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:07.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:12.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:17.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:22.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:27.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:32.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:37.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:42.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:47.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:52.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:57.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:07.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:12.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:17.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:22.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:32.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:37.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:42.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:47.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:52.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:57.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:07.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:12.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:22.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:27.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:32.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:37.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:42.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:47.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:02.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:07.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:12.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:22.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:27.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:32.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:37.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:42.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:47.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:52.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:02.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:07.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:12.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:17.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:22.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:27.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:32.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:37.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:42.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:47.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:52.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:57.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:02.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:07.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:12.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:17.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:22.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:27.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:32.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:37.905 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:42.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:47.894 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:02.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:07.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:12.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:17.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:22.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:27.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:32.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:37.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:42.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:47.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:52.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:57.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:07.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:12.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:17.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:22.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:27.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:32.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:37.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:42.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:45:33.340 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 16868 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:45:33.345 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:45:34.443 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 1.76 seconds (process running for 3.033)
+2023-12-18 00:45:53.404 [RMI TCP Connection(2)-127.0.0.1] INFO 
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-12-18 00:47:11.807 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 18976 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:47:11.812 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:47:12.721 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:47:12.738 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:47:12.773 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 00:47:31.316 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 8808 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:47:31.320 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:47:32.252 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:47:32.267 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:47:32.300 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 00:48:08.200 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 4444 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:48:08.208 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:48:09.666 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:48:09.692 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:48:09.760 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 01:03:25.648 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 4428 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:03:25.658 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:03:27.515 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:03:27.544 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:03:27.636 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 01:09:21.119 [main] INFO 
 				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-15 01:24:13.631 [main] WARN 
+2023-12-18 01:09:21.685 [main] WARN 
 				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-15 01:24:14.237 [main] INFO 
+2023-12-18 01:09:22.408 [main] INFO 
 				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-15 01:24:14.563 [main] WARN 
+2023-12-18 01:09:22.824 [main] WARN 
 				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-15 01:24:14.575 [main] WARN 
+2023-12-18 01:09:22.830 [main] WARN 
 				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-15 01:24:14.591 [main] INFO 
+2023-12-18 01:09:22.843 [main] INFO 
 				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-15 01:24:14.592 [main] INFO 
+2023-12-18 01:09:22.844 [main] INFO 
 				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-15 01:24:14.592 [main] INFO 
+2023-12-18 01:09:22.844 [main] INFO 
 				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-15 01:24:14.601 [main] INFO 
+2023-12-18 01:09:22.853 [main] INFO 
 				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-15 01:24:15.348 [main] INFO 
+2023-12-18 01:09:23.899 [main] INFO 
 				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-15 01:24:16.275 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@646d810b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-15 01:24:16.368 [main] INFO 
+2023-12-18 01:09:25.256 [main] INFO 
+				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@280fafd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-12-18 01:09:25.370 [main] INFO 
 				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-15 01:24:16.773 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
-2023-12-15 01:32:12.331 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-15 01:32:12.824 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-15 01:32:13.458 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-15 01:32:13.810 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-15 01:32:13.814 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-15 01:32:13.830 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-15 01:32:13.831 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-15 01:32:13.831 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-15 01:32:13.840 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-15 01:32:14.548 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-15 01:32:14.926 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-15 01:32:15.013 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-15 01:32:15.242 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
-2023-12-15 01:32:41.330 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-15 01:32:41.795 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-15 01:32:42.396 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-15 01:32:42.735 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-15 01:32:42.739 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-15 01:32:42.751 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-15 01:32:42.751 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-15 01:32:42.751 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-15 01:32:42.760 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-15 01:32:43.480 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-15 01:32:43.974 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-15 01:32:44.061 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-15 01:32:44.308 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserID, Error Message: Invalid numeric cell type, Row Number: 7, Error Column: UserID, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\success.xlsx
-2023-12-15 01:33:32.784 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-15 01:33:33.283 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-15 01:33:33.892 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-15 01:33:34.214 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-15 01:33:34.218 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-15 01:33:34.234 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-15 01:33:34.234 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-15 01:33:34.234 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-15 01:33:34.243 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-15 01:33:35.019 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-15 01:33:35.397 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c0f28f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-15 01:33:35.484 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 18:55:23.578 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 18:55:23.941 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 18:55:24.411 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 18:55:24.711 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 18:55:24.717 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 18:55:24.729 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 18:55:24.729 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 18:55:24.730 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 18:55:24.735 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 18:55:25.530 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 18:55:26.060 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c1447b5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 18:55:26.158 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 18:56:41.106 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 18:56:41.464 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 18:56:41.942 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 18:56:42.234 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 18:56:42.240 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 18:56:42.252 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 18:56:42.258 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 18:56:42.259 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 18:56:42.265 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 18:56:43.070 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 18:56:44.002 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 18:56:44.092 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 18:59:09.257 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 18:59:09.681 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 18:59:10.136 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 18:59:10.398 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 18:59:10.403 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 18:59:10.413 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 18:59:10.414 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 18:59:10.414 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 18:59:10.420 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 18:59:11.152 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 18:59:12.256 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4702e7a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 18:59:12.346 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 18:59:12.814 [main] WARN 
-				o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
-2023-12-17 18:59:12.814 [main] ERROR
-				o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'user6' for key 'userentity.username_UNIQUE'
-2023-12-17 19:01:03.274 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:01:03.637 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:01:04.102 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:01:04.384 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:01:04.389 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:01:04.404 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:01:04.404 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:01:04.405 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:01:04.412 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:01:05.265 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:01:06.333 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4702e7a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:01:06.426 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:01:14.996 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:01:15.444 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:01:15.978 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:01:16.294 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:01:16.300 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:01:16.313 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:01:16.313 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:01:16.314 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:01:16.322 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:01:17.124 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:01:18.188 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4702e7a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:01:18.278 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:31:51.128 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:31:51.481 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:31:51.957 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:31:52.217 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:31:52.221 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:31:52.231 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:31:52.232 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:31:52.232 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:31:52.238 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:31:53.028 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:31:54.042 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4702e7a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:31:54.131 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:34:15.074 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:34:15.436 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:34:15.897 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:34:16.183 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:34:16.188 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:34:16.202 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:34:16.202 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:34:16.202 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:34:16.208 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:34:17.015 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:34:18.082 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4702e7a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:34:18.167 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:38:54.264 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:38:54.607 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:38:55.083 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:38:55.346 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:38:55.350 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:38:55.362 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:38:55.362 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:38:55.363 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:38:55.368 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:38:56.144 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:38:57.140 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:38:57.220 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:39:48.886 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:39:49.225 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:39:49.695 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:39:49.970 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:39:49.973 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:39:49.987 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:39:49.987 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:39:49.987 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:39:49.994 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:39:50.811 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:39:51.745 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e00bfe2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:39:51.834 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:40:12.385 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:40:12.738 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:40:13.230 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:40:13.502 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:40:13.506 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:40:13.520 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:40:13.521 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:40:13.521 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:40:13.528 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:40:14.363 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:40:15.324 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:40:15.405 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:44:43.370 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:44:43.722 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:44:44.226 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:44:44.489 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:44:44.493 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:44:44.506 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:44:44.506 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:44:44.506 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:44:44.513 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:44:45.301 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:44:46.320 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:44:46.403 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 19:47:53.866 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 19:47:54.220 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 19:47:54.738 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 19:47:55.006 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 19:47:55.011 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 19:47:55.025 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 19:47:55.026 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 19:47:55.026 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 19:47:55.034 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 19:47:55.843 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 19:47:56.783 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 19:47:56.867 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 20:13:31.276 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 20:13:31.619 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 20:13:32.093 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 20:13:32.362 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 20:13:32.366 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 20:13:32.379 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 20:13:32.379 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 20:13:32.380 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 20:13:32.386 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 20:13:33.178 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 20:13:34.121 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@685f5d0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 20:13:34.208 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 21:49:26.336 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 21:49:26.979 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 21:49:27.637 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 21:49:28.068 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 21:49:28.073 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 21:49:28.085 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 21:49:28.085 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 21:49:28.085 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 21:49:28.093 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 21:49:29.051 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 21:49:30.425 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0aaaf0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 21:49:30.536 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 21:49:31.011 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserName, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 21:53:35.176 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 21:53:35.675 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 21:53:36.250 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 21:53:36.603 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 21:53:36.608 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 21:53:36.621 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 21:53:36.621 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 21:53:36.621 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 21:53:36.632 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 21:53:37.425 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 21:53:38.461 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0aaaf0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 21:53:38.548 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 21:53:38.914 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserName, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 21:53:39.030 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: Processing Excel Record, Error Message: Error processing Excel record, Row Number: 5, Error Column: N/A, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 21:57:26.388 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 21:57:26.980 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 21:57:27.673 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 21:57:28.076 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 21:57:28.081 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 21:57:28.094 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 21:57:28.094 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 21:57:28.094 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 21:57:28.107 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 21:57:29.006 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 21:57:30.464 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0aaaf0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 21:57:30.573 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 21:57:31.085 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: UserName, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 21:57:31.444 [main] WARN 
-				o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
-2023-12-17 21:57:31.444 [main] ERROR
-				o.h.e.jdbc.spi.SqlExceptionHelper - Column 'username' cannot be null
-2023-12-17 21:57:31.447 [main] INFO 
-				o.h.e.j.b.i.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
-2023-12-17 21:59:34.109 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 21:59:34.730 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 21:59:35.394 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 21:59:35.820 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 21:59:35.825 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 21:59:35.845 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 21:59:35.845 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 21:59:35.845 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 21:59:35.854 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 21:59:36.766 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 21:59:38.176 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0aaaf0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 21:59:38.288 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 21:59:38.908 [main] ERROR
+2023-12-18 01:09:25.880 [main] ERROR
 				com.my.qfc.common.util.ErrorLogger - Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 21:59:39.095 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error creating or writing to the error log file.
-java.io.FileNotFoundException: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx_error.xlsx (The process cannot access the file because it is being used by another process)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
-	at com.my.qfc.common.util.ErrorLogger.saveErrorLogFile(ErrorLogger.java:62)
-	at com.my.qfc.common.util.ErrorLogger.logError(ErrorLogger.java:31)
-	at com.my.qfc.common.util.ExcelReaderStandalone.getStringCellValue(ExcelReaderStandalone.java:94)
-	at com.my.qfc.common.util.ExcelReaderStandalone.createUserEntityFromRow(ExcelReaderStandalone.java:60)
-	at com.my.qfc.common.util.ExcelReaderStandalone.processExcelFile(ExcelReaderStandalone.java:44)
-	at com.my.qfc.common.App.main(App.java:14)
-2023-12-17 21:59:39.129 [main] WARN 
+2023-12-18 01:09:26.253 [main] WARN 
 				o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
-2023-12-17 21:59:39.129 [main] ERROR
+2023-12-18 01:09:26.253 [main] ERROR
 				o.h.e.jdbc.spi.SqlExceptionHelper - Column 'username' cannot be null
-2023-12-17 21:59:39.131 [main] INFO 
+2023-12-18 01:09:26.256 [main] INFO 
 				o.h.e.j.b.i.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
-2023-12-17 22:00:14.648 [main] INFO 
-				org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-2023-12-17 22:00:15.264 [main] WARN 
-				org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2023-12-17 22:00:15.968 [main] INFO 
-				o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-17 22:00:16.387 [main] WARN 
-				o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-2023-12-17 22:00:16.393 [main] WARN 
-				o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2023-12-17 22:00:16.408 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/springdata]
-2023-12-17 22:00:16.408 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2023-12-17 22:00:16.408 [main] INFO 
-				o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2023-12-17 22:00:16.421 [main] INFO 
-				o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2023-12-17 22:00:17.419 [main] INFO 
-				org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-17 22:00:18.817 [main] INFO 
-				o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5d9618f2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2023-12-17 22:00:18.940 [main] INFO 
-				o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-17 22:00:19.448 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 22:00:20.063 [main] ERROR
-				com.my.qfc.common.util.ErrorLogger - Error Data: 1.0, Error Message: Invalid string cell type, Row Number: 5, Error Column: UserName, File Name: C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\resources\Book1.xlsx
-2023-12-17 22:00:20.134 [main] WARN 
-				o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
-2023-12-17 22:00:20.134 [main] ERROR
-				o.h.e.jdbc.spi.SqlExceptionHelper - Column 'username' cannot be null
-2023-12-17 22:00:20.136 [main] INFO 
-				o.h.e.j.b.i.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2023-12-18 01:09:40.761 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 8884 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:09:40.766 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:09:42.062 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'excelReaderStandalone' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\target\classes\com\my\qfc\common\util\ExcelReaderStandalone.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.my.qfc.common.util.DatabaseUtil' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:09:42.079 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:09:42.132 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.my.qfc.common.util.ExcelReaderStandalone required a bean of type 'com.my.qfc.common.util.DatabaseUtil' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.DatabaseUtil' in your configuration.
+
+2023-12-18 01:10:46.428 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 6984 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:10:46.435 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:10:47.681 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'excelReaderStandalone' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\target\classes\com\my\qfc\common\util\ExcelReaderStandalone.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.my.qfc.common.util.DatabaseUtil' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:10:47.701 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:10:47.754 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.my.qfc.common.util.ExcelReaderStandalone required a bean of type 'com.my.qfc.common.util.DatabaseUtil' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.DatabaseUtil' in your configuration.
+
+2023-12-18 01:12:59.783 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 19044 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:12:59.788 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:13:01.028 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'excelReaderStandalone' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\target\classes\com\my\qfc\common\util\ExcelReaderStandalone.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.my.qfc.common.util.DatabaseUtil' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:13:01.067 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:13:01.124 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.my.qfc.common.util.ExcelReaderStandalone required a bean of type 'com.my.qfc.common.util.DatabaseUtil' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.DatabaseUtil' in your configuration.
+
+2023-12-18 01:14:18.128 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 17160 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:14:18.133 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:14:19.360 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'excelReaderStandalone' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\target\classes\com\my\qfc\common\util\ExcelReaderStandalone.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.my.qfc.common.util.DatabaseUtil' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:14:19.384 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:14:19.437 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.my.qfc.common.util.ExcelReaderStandalone required a bean of type 'com.my.qfc.common.util.DatabaseUtil' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.DatabaseUtil' in your configuration.
+

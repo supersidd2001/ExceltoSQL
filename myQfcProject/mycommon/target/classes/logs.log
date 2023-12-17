@@ -1,0 +1,490 @@
+2023-12-18 00:14:48.819 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 18360 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:14:48.828 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:14:50.313 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Invocation of init method failed
+2023-12-18 00:14:50.340 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:14:50.400 [main] ERROR
+				o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.my.qfc.service.code.MyServiceApplication.main(MyServiceApplication.java:21)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.my.qfc.service.util.ApplicationProperties.getInputFolder()" because "this.applicationProperties" is null
+	at com.my.qfc.service.scheduler.MyScheduler.processFiles(MyScheduler.java:29)
+	at com.my.qfc.service.code.MyServiceApplication.initialize(MyServiceApplication.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 17 common frames omitted
+2023-12-18 00:30:11.507 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 7920 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:30:11.515 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:30:12.974 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:30:13.003 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:30:13.310 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.884 seconds (process running for 4.464)
+2023-12-18 00:32:24.986 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 17016 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:32:24.995 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:32:26.352 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:32:26.384 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:32:26.703 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.882 seconds (process running for 4.42)
+2023-12-18 00:33:16.088 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 8876 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:33:16.095 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:33:17.517 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:33:17.551 [main] INFO 
+				c.m.q.service.scheduler.MyScheduler - MyScheduler initialized with ApplicationProperties.
+2023-12-18 00:33:17.922 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 3.014 seconds (process running for 4.522)
+2023-12-18 00:33:17.928 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:22.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:32.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:37.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:42.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:47.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:33:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:02.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:07.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:12.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:17.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:22.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:27.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:32.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:37.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:42.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:43.967 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 6876 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:34:43.975 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:34:45.448 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+2023-12-18 00:34:45.473 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:34:45.522 [main] ERROR
+				o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myServiceApplication': Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.my.qfc.service.code.MyServiceApplication.main(MyServiceApplication.java:21)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 16 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.my.qfc.service.scheduler"
+
+	at com.my.qfc.service.scheduler.MyScheduler.<init>(MyScheduler.java:1)
+	at com.my.qfc.service.code.MyServiceApplication.<init>(MyServiceApplication.java:18)
+	at com.my.qfc.service.code.MyServiceApplication$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 18 common frames omitted
+2023-12-18 00:34:47.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:52.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:34:57.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:02.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:07.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:12.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:18.413 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 15636 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:35:18.421 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:35:20.207 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 2.825 seconds (process running for 4.292)
+2023-12-18 00:35:22.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:32.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:37.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:42.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:47.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:52.894 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:35:57.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:07.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:12.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:17.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:22.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:27.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:32.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:37.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:42.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:47.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:52.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:36:57.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:07.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:12.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:17.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:22.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:27.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:32.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:37.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:42.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:47.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:52.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:37:57.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:07.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:12.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:22.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:27.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:32.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:37.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:42.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:47.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:38:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:02.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:07.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:12.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:17.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:22.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:27.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:32.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:37.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:42.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:47.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:52.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:39:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:02.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:07.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:12.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:17.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:22.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:27.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:32.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:37.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:42.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:47.891 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:52.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:40:57.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:02.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:07.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:12.901 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:17.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:22.890 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:27.892 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:32.899 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:37.905 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:42.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:47.894 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:52.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:41:57.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:02.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:07.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:12.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:17.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:22.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:27.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:32.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:37.900 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:42.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:47.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:52.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:42:57.904 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:02.902 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:07.903 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:12.898 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:17.897 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:22.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:27.895 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:32.889 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:37.893 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:43:42.896 [scheduling-1] INFO 
+				c.m.q.service.scheduler.MyScheduler - Files processed successfully.
+2023-12-18 00:45:33.340 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 16868 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:45:33.345 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:45:34.443 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Started MyServiceApplication in 1.76 seconds (process running for 3.033)
+2023-12-18 00:45:53.404 [RMI TCP Connection(2)-127.0.0.1] INFO 
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-12-18 00:47:11.807 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 18976 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:47:11.812 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:47:12.721 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:47:12.738 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:47:12.773 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 00:47:31.316 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 8808 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:47:31.320 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:47:32.252 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:47:32.267 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:47:32.300 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 00:48:08.200 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 4444 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 00:48:08.208 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 00:48:09.666 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 00:48:09.692 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 00:48:09.760 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+
+2023-12-18 01:03:25.648 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - Starting MyServiceApplication using Java 17.0.9 with PID 4428 (C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes started by Siddharth in C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice)
+2023-12-18 01:03:25.658 [main] INFO 
+				c.m.q.s.code.MyServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-18 01:03:27.515 [main] WARN 
+				o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myScheduler' defined in file [C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\myservice\target\classes\com\my\qfc\service\scheduler\MyScheduler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-18 01:03:27.544 [main] INFO 
+				o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-18 01:03:27.636 [main] ERROR
+				o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.my.qfc.service.scheduler.MyScheduler required a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.my.qfc.common.util.ExcelReaderStandalone' in your configuration.
+

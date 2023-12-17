@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
 Built-By: Siddharth
 Build-Jdk: 17.0.9
+Implementation-Title: myservice
+Implementation-Version: 3.2.0
+Implementation-Vendor-Id: org.springframework.boot
+Implementation-URL: http://www.example.com
 Created-By: Maven Integration for Eclipse
 

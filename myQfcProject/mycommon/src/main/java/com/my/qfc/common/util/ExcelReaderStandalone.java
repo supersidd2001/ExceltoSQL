@@ -14,9 +14,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+import org.springframework.stereotype.Component;
 
 import com.my.qfc.common.vo.UserEntity;
 
+@Component
 public class ExcelReaderStandalone {
 
 	private final DatabaseUtil databaseUtil;

@@ -1,0 +1,12 @@
+com\my\qfc\common\util\MyCommonLogger.class
+com\my\qfc\common\vo\UserEntity.class
+com\my\qfc\common\util\DatabaseUtil.class
+com\my\qfc\common\util\ErrorLogger.class
+com\my\qfc\common\batchinsert\main\ExcelBatchInsertMain.class
+com\my\qfc\common\batchinsert\dao\ExcelBatchInsertDAO.class
+com\my\qfc\common\util\HibernateUtil.class
+com\my\qfc\common\util\ExcelReaderStandalone.class
+com\my\qfc\common\batchinsert\processor\ExcelBatchInsertProcessor.class
+com\my\qfc\common\util\ErrorLogger$ErrorDetails.class
+com\my\qfc\common\App.class
+com\my\qfc\common\vo\UserVO.class
