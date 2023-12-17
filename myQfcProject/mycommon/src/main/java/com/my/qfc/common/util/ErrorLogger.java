@@ -57,7 +57,9 @@ public class ErrorLogger {
 
 		// Save error log file
 		try {
-			Path errorLogFilePath = Paths.get( errorDetails.getFileName() + "_error.xlsx");
+			Path errorLogFilePath = Paths.get(
+					"C:\\Users\\Siddharth Shinde\\Desktop\\Springmaven\\myQfcProject\\myQfcProject\\mycommon\\src\\main\\resources\\"
+							+ errorDetails.getFileName() + "_error.xlsx");
 
 			// Create parent directories if they do not exist
 			Files.createDirectories(errorLogFilePath.getParent());
@@ -83,7 +85,7 @@ public class ErrorLogger {
 	}
 
 	// Internal ErrorDetails class
-	private static class ErrorDetails {
+	public static class ErrorDetails {
 		private final String errorData;
 		private final String errorMessage;
 		private final int rowNumber;

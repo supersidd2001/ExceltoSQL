@@ -10,7 +10,7 @@ public class App {
 		try {
 			DatabaseUtil databaseUtil = new DatabaseUtil();
 			ExcelReaderStandalone excelReader = new ExcelReaderStandalone(databaseUtil);
-			String excelFilePath = "C:\\Users\\Siddharth Shinde\\Desktop\\Springmaven\\myQfcProject\\myQfcProject\\mycommon\\src\\main\\resources\\success.xlsx";
+			String excelFilePath = "C:\\Users\\Siddharth Shinde\\Desktop\\Springmaven\\myQfcProject\\myQfcProject\\mycommon\\src\\main\\resources\\Book1.xlsx";
 			excelReader.processExcelFile(excelFilePath);
 			int successfulRecordsCount = excelReader.getSuccessfulRecordsCount();
 			int errorRecordsCount = excelReader.getErrorRecordsCount();
@@ -21,8 +21,7 @@ public class App {
 			System.out.println("Total Records Count: " + totalRecordsCount);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+
 		}
-		
 	}
 }

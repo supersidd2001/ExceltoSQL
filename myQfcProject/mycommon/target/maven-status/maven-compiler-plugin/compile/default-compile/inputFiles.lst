@@ -1,12 +1,6 @@
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\bulkinsert\batchprocessing\BulkInsertHandler.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\util\DatabaseUtil.java
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\bulkinsert\dao\BulkInsertDAO.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\App.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\util\HibernateUtil.java
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\vo\UserEntity.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\vo\UserVO.java
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\bulkinsert\batchprocessing\BatchInsertProcessor.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\util\ExcelReaderStandalone.java
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\bulkinsert\main\App.java
-C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\util\MyCommonLogger.java
 C:\Users\Siddharth Shinde\Desktop\Springmaven\myQfcProject\myQfcProject\mycommon\src\main\java\com\my\qfc\common\util\ErrorLogger.java

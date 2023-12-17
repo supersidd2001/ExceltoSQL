@@ -22,7 +22,6 @@ public class ExcelReaderStandalone {
 	private final DatabaseUtil databaseUtil;
 	private static int successfulRecordsCount = 0;
 	private static int errorRecordsCount = 0;
-	private List<UserEntity> users = new ArrayList<>();
 
 	public ExcelReaderStandalone(DatabaseUtil databaseUtil) {
 		this.databaseUtil = databaseUtil;
@@ -41,30 +40,13 @@ public class ExcelReaderStandalone {
 			for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
 				XSSFRow row = sheet.getRow(rowIndex);
 				if (row != null) {
-					UserEntity UserVO = createUserEntityFromRow(row, file.toString());
-					processUserEntity(UserVO);
+					UserEntity UserEntity = createUserEntityFromRow(row, file.toString());
+					processUserEntity(UserEntity);
 				}
 			}
 
 		} catch (IOException e) {
 		}
-		
-		 try (FileInputStream fileInputStream = new FileInputStream(file)) {
-	            XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
-	            XSSFSheet sheet = workbook.getSheetAt(0);
-
-	            for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
-	                XSSFRow row = sheet.getRow(rowIndex);
-	                if (row != null) {
-	                    UserEntity userEntity = createUserEntityFromRow(row, file.toString());
-	                    users.add(userEntity); // Add the user to the list
-	                    processUserEntity(userEntity);
-	                }
-	            }
-
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
 	}
 
 	private UserEntity createUserEntityFromRow(Row row, String fileName) {
@@ -72,12 +54,12 @@ public class ExcelReaderStandalone {
 		String username = getStringCellValue(row.getCell(1), "UserName", fileName);
 		String userAddress = getStringCellValue(row.getCell(2), "UserAddress", fileName);
 
-		UserEntity UserVO = new UserEntity();
-		UserVO.setUserid(userId);
-		UserVO.setUsername(username);
-		UserVO.setUseraddress(userAddress);
+		UserEntity UserEntity = new UserEntity();
+		UserEntity.setUserid(userId);
+		UserEntity.setUsername(username);
+		UserEntity.setUseraddress(userAddress);
 
-		return UserVO;
+		return UserEntity;
 	}
 
 	@SuppressWarnings({ "deprecation", "null" })
@@ -86,54 +68,54 @@ public class ExcelReaderStandalone {
 			if (cell.getCellType() == CellType.NUMERIC) {
 				return cell.getNumericCellValue();
 			} else {
-				ErrorLogger.logError(cell.toString(), "Invalid numeric cell type", cell.getRowIndex(), columnName,
-						fileName);
+				ErrorLogger.logError(columnName, "Invalid numeric cell type", cell.getRowIndex(), columnName, fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(cell.toString(), "Numeric cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(columnName, "Numeric cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return (Double) null; // Default value
 	}
 
-	@SuppressWarnings({ "deprecation", "null" })
+	@SuppressWarnings({ "deprecation" })
 	private String getStringCellValue(Cell cell, String columnName, String fileName) {
 		if (cell != null) {
 			if (cell.getCellType() == CellType.STRING) {
 				return cell.getStringCellValue();
 			} else {
-				ErrorLogger.logError(cell.toString(), "Invalid string cell type", cell.getRowIndex(), columnName,
-						fileName);
+				ErrorLogger.logError(columnName, "Invalid string cell type", cell.getRowIndex(), columnName, fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(cell.toString(), "String cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(columnName, "String cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return null; // Default value
 	}
 
-	private void processUserEntity(UserEntity uservo) {
+	private void processUserEntity(UserEntity userEntity) {
 		try {
 			// Check if the user already exists in the database
-			UserEntity existingUser = getUserFromDatabase(uservo.getUserid());
+			UserEntity existingUser = getUserFromDatabase(userEntity.getUserid());
 
 			if (existingUser != null) {
-				existingUser.setId(uservo.getId());
-				existingUser.setUsername(uservo.getUsername());
-				existingUser.setUseraddress(uservo.getUseraddress());
-				existingUser.setUserid(uservo.getUserid());
+				// Update existing user
+				existingUser.setUsername(userEntity.getUsername());
+				existingUser.setUseraddress(userEntity.getUseraddress());
 				try {
 					databaseUtil.updateUser(existingUser);
+					processedUserEntities.add(existingUser);
 					successfulRecordsCount++;
 				} catch (Exception e) {
 				}
 			} else {
-				databaseUtil.insertUser(uservo);
+				databaseUtil.insertUser(userEntity);
+				processedUserEntities.add(userEntity);
 				successfulRecordsCount++;
 			}
 		} catch (Exception e) {
+			errorRecordsCount++;
 		}
 	}
 
@@ -150,6 +132,12 @@ public class ExcelReaderStandalone {
 		}
 	}
 
+	private final List<UserEntity> processedUserEntities = new ArrayList<>();
+
+	public List<UserEntity> getProcessedUserEntities() {
+		return processedUserEntities;
+	}
+
 	public int getSuccessfulRecordsCount() {
 		return successfulRecordsCount;
 	}
@@ -160,15 +148,6 @@ public class ExcelReaderStandalone {
 
 	private String extractFilename(String filePath) {
 		File file = new File(filePath);
-		String originalFilename = file.getName();
-
-		String sanitizedFilename = originalFilename.replaceAll("[^a-zA-Z0-9.-]", "_");
-
-		return sanitizedFilename;
+		return file.getName();
 	}
-	
-	public List<UserEntity> getUsers() {
-        return users;
-    }
-
 }
