@@ -1,18 +1,17 @@
 package com.my.qfc.common.util;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ErrorLogger {
 
@@ -29,10 +28,10 @@ public class ErrorLogger {
 				errorDetails.getErrorColumn(), errorDetails.getFileName());
 
 		// Save error details to an Excel file
-		saveErrorLogFile(errorDetails);
+		saveErrorLogFile(errorDetails, fileName);
 	}
 
-	private static void saveErrorLogFile(ErrorDetails errorDetails) {
+	private static void saveErrorLogFile(ErrorDetails errorDetails, String filePath) {
 		XSSFWorkbook errorWorkbook = new XSSFWorkbook();
 		Sheet errorSheet = errorWorkbook.createSheet("ErrorDetails");
 
@@ -55,19 +54,9 @@ public class ErrorLogger {
 			row.createCell(4).setCellValue(details.getFileName());
 		}
 
-		// Save error log file
 		try {
-			Path errorLogFilePath = Paths.get(
-					"C:\\Users\\Siddharth Shinde\\Desktop\\Springmaven\\myQfcProject\\myQfcProject\\mycommon\\src\\main\\resources\\"
-							+ errorDetails.getFileName() + "_error.xlsx");
-
-			// Create parent directories if they do not exist
-			Files.createDirectories(errorLogFilePath.getParent());
-
-			// Create the error log file if it does not exist
-			if (!Files.exists(errorLogFilePath)) {
-				Files.createFile(errorLogFilePath);
-			}
+			Path parentDirectory = Paths.get(filePath).getParent();
+			Path errorLogFilePath = parentDirectory.resolve(errorDetails.getFileName() + "_error.xlsx");
 
 			// Write to the error log file
 			try (FileOutputStream fileOut = new FileOutputStream(errorLogFilePath.toFile())) {

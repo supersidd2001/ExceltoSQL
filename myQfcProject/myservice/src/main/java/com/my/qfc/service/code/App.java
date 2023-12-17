@@ -1,4 +1,4 @@
-package org.myservice;
+package com.my.qfc.service.code;
 
 /**
  * Hello world!

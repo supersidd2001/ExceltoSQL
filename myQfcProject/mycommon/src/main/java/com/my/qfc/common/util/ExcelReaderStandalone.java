@@ -40,12 +40,18 @@ public class ExcelReaderStandalone {
 			for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
 				XSSFRow row = sheet.getRow(rowIndex);
 				if (row != null) {
-					UserEntity UserEntity = createUserEntityFromRow(row, file.toString());
-					processUserEntity(UserEntity);
+					try {
+						UserEntity UserEntity = createUserEntityFromRow(row, file.toString());
+						processUserEntity(UserEntity);
+					} catch (Exception e) {
+						ErrorLogger.logError("Processing Excel Record", "Error processing Excel record", rowIndex,
+								"N/A", filePath);
+					}
 				}
 			}
-
 		} catch (IOException e) {
+			// Handle IOException appropriately
+			ErrorLogger.logError("Reading Excel File", "Error reading Excel file", -1, "N/A", filePath);
 		}
 	}
 
@@ -62,33 +68,35 @@ public class ExcelReaderStandalone {
 		return UserEntity;
 	}
 
-	@SuppressWarnings({ "deprecation", "null" })
+	@SuppressWarnings({ "null" })
 	private double getNumericCellValue(Cell cell, String columnName, String fileName) {
 		if (cell != null) {
 			if (cell.getCellType() == CellType.NUMERIC) {
 				return cell.getNumericCellValue();
 			} else {
-				ErrorLogger.logError(columnName, "Invalid numeric cell type", cell.getRowIndex(), columnName, fileName);
+				ErrorLogger.logError(cell.toString(), "Invalid numeric cell type", cell.getRowIndex(), columnName,
+						fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(columnName, "Numeric cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(cell.toString(), "Numeric cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return (Double) null; // Default value
 	}
 
-	@SuppressWarnings({ "deprecation" })
+	@SuppressWarnings({ "null" })
 	private String getStringCellValue(Cell cell, String columnName, String fileName) {
 		if (cell != null) {
 			if (cell.getCellType() == CellType.STRING) {
 				return cell.getStringCellValue();
 			} else {
-				ErrorLogger.logError(columnName, "Invalid string cell type", cell.getRowIndex(), columnName, fileName);
+				ErrorLogger.logError(cell.toString(), "Invalid string cell type", cell.getRowIndex(), columnName,
+						fileName);
 				errorRecordsCount++;
 			}
 		} else {
-			ErrorLogger.logError(columnName, "String cell is null", -1, columnName, fileName);
+			ErrorLogger.logError(cell.toString(), "String cell is null", -1, columnName, fileName);
 			errorRecordsCount++;
 		}
 		return null; // Default value
@@ -139,7 +147,7 @@ public class ExcelReaderStandalone {
 	}
 
 	public int getSuccessfulRecordsCount() {
-		return successfulRecordsCount;
+		return successfulRecordsCount - 1;
 	}
 
 	public int getErrorRecordsCount() {
