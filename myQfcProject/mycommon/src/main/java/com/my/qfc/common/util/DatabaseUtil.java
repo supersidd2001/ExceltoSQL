@@ -9,9 +9,11 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import com.my.qfc.common.vo.UserEntity;
 
+@Component
 public class DatabaseUtil {
 
 	private static final Logger logger = LoggerFactory.getLogger(DatabaseUtil.class);

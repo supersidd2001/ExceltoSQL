@@ -1,1 +1,2 @@
-org\myservice\AppTest.class
+com\my\qfc\service\AppTest.class
+com\my\qfc\myservice\MyserviceApplicationTests.class

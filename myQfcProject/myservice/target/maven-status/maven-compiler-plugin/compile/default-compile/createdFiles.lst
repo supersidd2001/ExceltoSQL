@@ -1,1 +1,3 @@
-com\my\qfc\service\code\MyServiceApplication.class
+com\my\qfc\service\code\scheduler\ExcelScheduler.class
+com\my\qfc\service\code\service\UserService.class
+com\my\qfc\service\code\MyserviceApplication.class
