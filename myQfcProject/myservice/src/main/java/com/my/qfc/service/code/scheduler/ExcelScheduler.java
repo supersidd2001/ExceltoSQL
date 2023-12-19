@@ -6,14 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import com.my.qfc.service.code.service.UserService;
 
 @Component
 public class ExcelScheduler {
@@ -23,13 +19,6 @@ public class ExcelScheduler {
 
 	@Value("${output.folder}")
 	private String outputFolder;
-
-	UserService userService;
-	
-	@Autowired 
-    public ExcelScheduler(UserService userService) {
-        this.userService = userService;
-    }
 
 	@Scheduled(fixedRate = 5000) // Run every 5 seconds
 	public void moveFiles() {
@@ -45,23 +34,16 @@ public class ExcelScheduler {
 			}
 
 			// Move files
-			Files.walk(sourcePath).filter(path -> path.toString().endsWith(".xlsx")).forEach(file -> {
-				try {
+			try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(sourcePath, "*.xlsx")) {
+				for (Path file : directoryStream) {
 					Path relativePath = sourcePath.relativize(file);
 					Path destinationFile = destinationPath.resolve(relativePath);
 					Files.move(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			});
-
-			try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(destinationPath, "*.xlsx")) {
-				for (Path path : directoryStream) {
-					userService.processExcelFiles(List.of(path.toString()));
+					System.out.printf("\nMoved %s to %s", file.toString(), destinationFile.toString());
 				}
 			}
 
-			System.out.println("Files moved successfully.");
+			System.out.println("\nFiles moved successfully.");
 		} catch (IOException e) {
 			System.err.println("Error moving files: " + e.getMessage());
 		}
